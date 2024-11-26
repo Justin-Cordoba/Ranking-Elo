@@ -5,15 +5,15 @@ body {
   background-color: #f9f9f9;
 }
 .button-capture {
-  background-color: #1cafd0;
-  width: 120px;
-  height: 30px;
-  margin-top: 10px;
-  margin-left: 10px;
-  border-radius: 12px; 
-  background-color:#1cafd0; 
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 12px;
+  background-color: black;
   cursor: pointer;
-
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 16px;
 }
 
 img {
@@ -29,7 +29,8 @@ img {
 }
 
 .ranking-elo {
-  max-width: 700px;
+  width: 1080px;
+  height: 1080px;
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
@@ -67,6 +68,7 @@ img {
 .rank {
   width: 96px;
   height: 96px;
+  flex-shrink: 0;
   display: grid;
   place-items: center;
   font-size: 32px;
@@ -74,30 +76,30 @@ img {
   color: white;
 }
 
-.bg-gold {
-  background-color: #fed700;
+.gold {
+  padding-bottom: 8px;
+  border-bottom: 3px solid #fed700;
 }
 
-.bg-blue {
-  background-color: #1cafd0;
+.blue {
+  padding-bottom: 8px;
+  border-bottom: 3px solid #1cafd0;
 }
 
-.bg-red {
-  background-color: #fc0e1d;
+.red {
+  padding-bottom: 8px;
+  border-bottom: 3px solid #fc0e1d;
 }
 
-.bg-gray {
-  background-color: #b2b2b2;
-}
-
-.info {
-  flex-grow: 1;
+.gray {
+  padding-bottom: 8px;
+  border-bottom: 3px solid #b2b2b2;
 }
 
 .details {
   display: flex;
-  gap: 234px;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
 }
 
