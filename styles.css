@@ -1,0 +1,154 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+.button-capture {
+  background-color: #1cafd0;
+  width: 120px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 12px; 
+  background-color:#1cafd0; 
+  cursor: pointer;
+
+}
+
+img {
+  margin-bottom: 5px;
+}
+.line-name {
+  margin: 0;
+}
+
+.elo-player {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.ranking-elo {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.logo {
+  height: 128px;
+  width: 128px;
+}
+
+.ranking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ranking-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.rank {
+  width: 96px;
+  height: 96px;
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+.bg-gold {
+  background-color: #fed700;
+}
+
+.bg-blue {
+  background-color: #1cafd0;
+}
+
+.bg-red {
+  background-color: #fc0e1d;
+}
+
+.bg-gray {
+  background-color: #b2b2b2;
+}
+
+.info {
+  flex-grow: 1;
+}
+
+.details {
+  display: flex;
+  gap: 234px;
+  align-items: center;
+  width: 100%;
+}
+
+.name {
+  font-size: 24px;
+  margin: 0;
+}
+
+.score {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 20px;
+}
+
+.change {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #28a745;
+  gap: 2px;
+}
+
+.positive span {
+  color: #28a745;
+}
+
+.line {
+  height: 3px;
+  border: none;
+}
+
+.bg-gold {
+  background-color: #fed700;
+}
+
+.bg-blue {
+  background-color: #1cafd0;
+}
+
+.bg-red {
+  background-color: #fc0e1d;
+}
+
+.bg-gray {
+  background-color: #b2b2b2;
+}
+
+.footer {
+  text-align: right;
+  padding-top: 40px;
+  font-size: 18px;
+  font-weight: 600;
+}
