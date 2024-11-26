@@ -8,137 +8,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   </head>
   <body>
-    <div>
-      <button class="button-capture" onclick="takeScreenShot()">
-        Tomar captura
-      </button>
-    </div>
+    <button class="button-capture" onclick="takeScreenShot()">
+      Tomar captura
+    </button>
+
     <div class="ranking-elo" id="divToTakeScreenShot">
       <div class="header">
-        <p class="title">
-          Ranking elo <br />
-          octubre 2024
-        </p>
+        <p class="title">Ranking elo nacional octubre 2024</p>
         <img src="Logo.png" alt="" />
       </div>
 
-      <div class="ranking-list">
-        <div class="ranking-item">
-          <div class="rank bg-gold">
-            <p>1</p>
-          </div>
-          <div class="info">
-            <div class="details">
-              <p class="name">Justin Cordoba Sevilla</p>
-              <div class="score">
-                <p class="line-name elo-player">1499</p>
-                <div class="change positive">
-                  <img src="/Arrow.png" alt="" />
-                  <span class="elo-player">99</span>
-                </div>
-              </div>
-            </div>
-            <hr class="line bg-gold" />
-          </div>
-        </div>
-
-        <div class="ranking-item">
-          <div class="rank bg-blue">
-            <p>2</p>
-          </div>
-          <div class="info">
-            <div class="details">
-              <p class="name">Justin Cordoba Sevilla</p>
-              <div class="score">
-                <p class="line-name elo-player">1499</p>
-                <div class="change positive">
-                  <img src="/Arrow.png" alt="" />
-                  <span class="elo-player">99</span>
-                </div>
-              </div>
-            </div>
-            <hr class="line bg-blue" />
-          </div>
-        </div>
-
-        <div class="ranking-item">
-          <div class="rank bg-red">
-            <p>3</p>
-          </div>
-          <div class="info">
-            <div class="details">
-              <p class="name">Justin Cordoba Sevilla</p>
-              <div class="score">
-                <p class="line-name elo-player">1499</p>
-                <div class="change positive">
-                  <img src="/Arrow.png" alt="" />
-                  <span class="elo-player">99</span>
-                </div>
-              </div>
-            </div>
-            <hr class="line bg-red" />
-          </div>
-        </div>
-
-        <div class="ranking-item">
-          <div class="rank bg-gray">
-            <p>4</p>
-          </div>
-          <div class="info">
-            <div class="details">
-              <p class="name">Justin Cordoba Sevilla</p>
-              <div class="score">
-                <p class="line-name elo-player">1499</p>
-                <div class="change positive">
-                  <img src="/Arrow.png" alt="" />
-                  <span class="elo-player">99</span>
-                </div>
-              </div>
-            </div>
-            <hr class="line bg-gray" />
-          </div>
-        </div>
-
-        <div class="ranking-item">
-          <div class="rank bg-gray">
-            <p>5</p>
-          </div>
-          <div class="info">
-            <div class="details">
-              <p class="name">Justin Cordoba Sevilla</p>
-              <div class="score">
-                <p class="line-name elo-player">1499</p>
-                <div class="change positive">
-                  <img src="/Arrow.png" alt="" />
-                  <span class="elo-player">99</span>
-                </div>
-              </div>
-            </div>
-            <hr class="line bg-gray" />
-          </div>
-        </div>
-      </div>
+      <div class="ranking-list"></div>
 
       <p class="footer">ajedrezcostarica.com</p>
     </div>
-    <script>
-      const takeScreenShot = () => {
-        const element = document.getElementById("divToTakeScreenShot");
-        if (!element) {
-          return;
-        }
-        html2canvas(element)
-          .then((canvas) => {
-            let image = canvas.toDataURL("image/jpg");
-            const a = document.createElement("a");
-            a.href = image;
-            a.download = "Ranking-Elo.jpg";
-            a.click();
-          })
-          .catch((Error) => {
-            console.error("No podemos tomar captura de esto en este momento.");
-          });
-      };
-    </script>
+
+    <script src="script.js"></script>
   </body>
 </html>
