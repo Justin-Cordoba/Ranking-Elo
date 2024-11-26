@@ -26,23 +26,23 @@ const players = [
   {
     rank: 2,
     name: 'Diaz Charpentier, Ashley Valeria',
-    elo: 1450,
-    change: 50,
+    elo: 1747,
+    change: 61,
     color: 'blue'
   },
   {
     rank: 3,
     name: 'Ortega Canisales, Aaden Josue',
-    elo: 1400,
-    change: 30,
+    elo: 1492,
+    change: 60,
     color: 'red'
   },
-  { rank: 4, name: 'Francia, Victor', elo: 1350, change: 20, color: 'gray' },
+  { rank: 4, name: 'Francia, Victor', elo: 1615, change: 55, color: 'gray' },
   {
     rank: 5,
     name: 'Marin Aguirre, Fabian Osvaldo',
-    elo: 1300,
-    change: 10,
+    elo: 1484,
+    change: 55,
     color: 'gray'
   }
 ]
