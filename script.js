@@ -1,8 +1,5 @@
 const takeScreenShot = () => {
-  const element = document.getElementById('divToTakeScreenShot')
-  if (!element) {
-    return
-  }
+  const element = document.getElementById('ranking-elo')
 
   html2canvas(element)
     .then((canvas) => {
@@ -21,15 +18,33 @@ const takeScreenShot = () => {
 const players = [
   {
     rank: 1,
-    name: 'Justin Cordoba Sevilla',
+    name: 'Nuñez Vargas, Medelyn Nicole',
     elo: 1499,
-    change: 99,
+    change: 84,
     color: 'gold'
   },
-  { rank: 2, name: 'John Doe', elo: 1450, change: 50, color: 'blue' },
-  { rank: 3, name: 'Jane Smith', elo: 1400, change: 30, color: 'red' },
-  { rank: 4, name: 'Alice Brown', elo: 1350, change: 20, color: 'gray' },
-  { rank: 5, name: 'Bob White', elo: 1300, change: 10, color: 'gray' }
+  {
+    rank: 2,
+    name: 'Diaz Charpentier, Ashley Valeria',
+    elo: 1747,
+    change: 61,
+    color: 'blue'
+  },
+  {
+    rank: 3,
+    name: 'Ortega Canisales, Aaden Josue',
+    elo: 1492,
+    change: 60,
+    color: 'red'
+  },
+  { rank: 4, name: 'Francia, Victor', elo: 1615, change: 55, color: 'gray' },
+  {
+    rank: 5,
+    name: 'Marin Aguirre, Fabian Osvaldo',
+    elo: 1484,
+    change: 55,
+    color: 'gray'
+  }
 ]
 
 // Seleccionar el contenedor donde se insertará el ranking
@@ -63,24 +78,26 @@ function createRanking() {
     scoreDiv.classList.add('score')
 
     const eloP = document.createElement('p')
-    eloP.classList.add('line-name', 'elo-player')
+    eloP.classList.add('elo-player')
     eloP.textContent = player.elo
 
     const changeDiv = document.createElement('div')
-    changeDiv.classList.add(
-      'change',
-      player.change > 0 ? 'positive' : 'negative'
-    )
+    changeDiv.classList.add('change')
 
-    const changeImg = document.createElement('img')
-    changeImg.src = '/Arrow.png'
-    changeImg.alt = ''
+    // SVG flecha
+    const changeSvg = document.createElement('div')
+    changeSvg.classList.add('arrow')
+    changeSvg.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M112 244l144-144 144 144M256 120v292"></path>
+      </svg>
+    `
 
     const changeSpan = document.createElement('span')
     changeSpan.classList.add('elo-player')
     changeSpan.textContent = player.change
 
-    changeDiv.appendChild(changeImg)
+    changeDiv.appendChild(changeSvg)
     changeDiv.appendChild(changeSpan)
 
     scoreDiv.appendChild(eloP)
