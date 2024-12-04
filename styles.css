@@ -17,11 +17,30 @@ body {
   min-height: 100dvh;
   overflow: auto;
   background-color: gray;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.button-social {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ec4899;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 600;
+  outline: none;
+  border: 2px solid transparent;
+  font-size: 20px;
+  position: absolute;
+  top: 75px;
+  left: 10px;
 }
 
 .button-capture {
-  padding: 16px 24px;
+  padding: 10px 14px;
   border-radius: 12px;
   background-color: white;
   cursor: pointer;
